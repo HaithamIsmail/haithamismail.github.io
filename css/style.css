@@ -1,9 +1,15 @@
-/********** Template CSS **********/
+/********** Template CSS - Ghibli-Inspired Blue Palette **********/
 :root {
-  --primary: #00B87B;
-  --secondary: #314355;
-  --light: #F2F2F2;
-  --dark: #2C3E50;
+  /* Soft slate blue - Howl's castle sky */
+  --primary: #5B7C99;
+  /* Warm cream - vintage paper */
+  --secondary: #F3D9BD;
+  /* Soft sky blue - peaceful clouds */
+  --light: #B8CADE;
+  /* Deep blue-gray - stormy skies */
+  --dark: #2F4156;
+  /* Warm coral - sunset accent */
+  --accent: #C97D60;
 }
 
 #spinner {
@@ -36,16 +42,20 @@
 .btn-square {
   width: 40px;
   height: 40px;
+  border-radius: 50% !important;
+  transition: all 0.3s ease;
 }
 
 .btn-sm-square {
   width: 30px;
   height: 30px;
+  border-radius: 50% !important;
 }
 
 .btn-lg-square {
   width: 50px;
   height: 50px;
+  border-radius: 50% !important;
 }
 
 .btn-square,
@@ -55,6 +65,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Soft hover effects */
+.btn-square:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(91, 124, 153, 0.4);
 }
 
 .btn.btn-primary {
@@ -115,28 +131,32 @@
 
 .title {
   position: relative;
+  color: var(--dark);
+  font-weight: 400;
 }
 
 .title::before {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 10px;
-  bottom: -4px;
+  width: 8px;
+  height: 8px;
+  bottom: -2px;
   left: 0;
-  border: 2px solid var(--light);
-  border-radius: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(91, 124, 153, 0.5);
 }
 
 .title::after {
   position: absolute;
   content: "";
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   bottom: 0;
-  left: 15px;
-  border-radius: 2px;
-  background: var(--light);
+  left: 12px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--primary) 0%, transparent 100%);
+  opacity: 0.6;
 }
 
 .progress {
@@ -150,8 +170,16 @@
 
 .service-item {
   padding: 30px;
-  text-align: center;
+  text-align: left;
   background: var(--secondary);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(91, 124, 153, 0.25);
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(91, 124, 153, 0.2);
 }
 
 .service-item i {
@@ -163,6 +191,7 @@
   background: var(--light);
   color: var(--primary);
   transition: .5s;
+  border-radius: 50%;
 }
 
 .service-item:hover i {
@@ -215,4 +244,194 @@
 
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
+}
+
+/* Ghibli-Inspired Soft Design Enhancements */
+
+/* Softer body and text styling */
+body {
+  background: #F5F2EA;
+  color: var(--dark);
+  line-height: 1.8;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Rounded corners for cards and containers */
+.shadow {
+  border-radius: 24px !important;
+  box-shadow: 0 8px 24px rgba(47, 65, 86, 0.12) !important;
+  background: linear-gradient(135deg, #FDFBF7 0%, #F0EBE3 100%);
+  border: 1px solid rgba(91, 124, 153, 0.2);
+}
+
+/* Softer borders */
+.border-start {
+  border-left: 3px solid var(--primary) !important;
+  border-radius: 2px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(91, 124, 153, 0.25) !important;
+}
+
+.border-top {
+  border-top: 1px solid rgba(91, 124, 153, 0.25) !important;
+}
+
+/* Button styling with soft colors */
+.btn {
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(203, 153, 126, 0.3);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--dark);
+  border: 1px solid rgba(159, 184, 173, 0.2);
+}
+
+.btn-secondary:hover {
+  background: var(--light);
+  color: var(--dark);
+  border-color: var(--primary);
+}
+
+.btn-dark {
+  background: var(--dark);
+  color: white;
+}
+
+.btn-dark:hover {
+  background: var(--primary);
+}
+
+/* Skill tags styling */
+.skill .btn {
+  margin: 4px;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  background: var(--secondary);
+  color: var(--dark);
+  border: 1px solid rgba(91, 124, 153, 0.25);
+  transition: all 0.3s ease;
+}
+
+.skill .btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(91, 124, 153, 0.3);
+}
+
+/* Headings with softer weight */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: var(--dark);
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+h1.text-primary {
+  color: var(--dark) !important;
+  font-weight: 500;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--dark);
+  padding: 8px 16px;
+  display: block;
+  margin: 4px 0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: var(--light);
+  color: var(--primary);
+  padding-left: 24px;
+}
+
+/* Spinner with soft colors */
+.spinner-border.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Stats boxes */
+.bg-secondary {
+  background: var(--secondary) !important;
+  border-radius: 16px;
+  border: 1px solid rgba(91, 124, 153, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bg-secondary:hover {
+  box-shadow: 0 6px 16px rgba(91, 124, 153, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Arrow icons softer */
+.bi-arrow-right {
+  color: var(--primary) !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-light {
+  color: var(--dark) !important;
+  opacity: 0.8;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+/* Footer */
+.bg-secondary.text-light {
+  background: var(--secondary) !important;
+  color: var(--dark) !important;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+/* Experience section improvements */
+.position-relative {
+  transition: all 0.3s ease;
+}
+
+.position-relative:hover {
+  padding-left: 8px;
+}
+
+/* Smooth transitions everywhere */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
