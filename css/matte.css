@@ -1,0 +1,220 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #333333;
+    --accent-color: #708090;
+    /* Slate Gray */
+    --light-accent: #e0e0e0;
+    --link-color: #2F4F4F;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --max-width: 800px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    margin-top: 0;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-accent);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--link-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted var(--accent-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-bottom-style: solid;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--light-accent);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.socials i {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+/* Job Cards */
+.job {
+    margin-bottom: 2.5rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    border-left: 2px solid var(--light-accent);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Tags */
+.tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags span {
+    background-color: #eee;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    color: #555;
+    font-family: monospace;
+}
+
+.tags.large span {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* Simple List */
+.simple-list li {
+    margin-bottom: 1rem;
+    border-left: none;
+    padding-left: 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .job-header {
+        flex-direction: column;
+    }
+
+    .company {
+        padding-left: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

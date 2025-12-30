@@ -1,306 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>Haitham Ismail - Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitham Ismail | Portfolio</title>
+    <!-- Fonts: Montserrat (Headings) & Open Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
-        <!-- Google Web Fonts - Soft Ghibli-inspired -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/flashy.css" rel="stylesheet">
+</head>
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<body>
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <nav class="side-nav">
+        <a href="#home" class="active" data-tooltip="Home"></a>
+        <a href="#about" data-tooltip="About"></a>
+        <a href="#experience" data-tooltip="Experience"></a>
+        <a href="#skills" data-tooltip="Skills"></a>
+        <a href="#education" data-tooltip="Education"></a>
+        <a href="#certificates" data-tooltip="Certificates"></a>
+        <a href="#contact" data-tooltip="Connect"></a>
+    </nav>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <div class="main-container">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+        <!-- SECTION 1: HERO -->
+        <section id="home" class="screen center-content bg-light">
+            <div class="hero-text-wrapper">
+                <h1 class="reveal-text">HAITHAM ISMAIL</h1>
             </div>
-        </div>
-        <!-- Spinner End -->
+            <p class="subtitle fade-in">Machine Learning Engineer</p>
+            <a href="#about" class="modern-btn">View My Work</a>
+        </section>
 
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <h1 class="text-primary mt-2">Haitham Ismail</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Machine Learning Engineer</div>
+        <!-- SECTION 2: ABOUT -->
+        <section id="about" class="screen split-screen bg-white">
+            <div class="content-side slide-in-left">
+                <h2 class="section-title">About Me</h2>
+                <div class="info-box">
+                    <p class="lead">System Status: <strong>AI Engineer at Intalio</strong></p>
+                    <p>Highly skilled Computer Engineer with a strong foundation in software development and machine
+                        learning. Proven expertise in Python, TensorFlow, and data analysis, with a deep understanding
+                        of machine learning algorithms and neural networks. Demonstrated ability to manage complex
+                        projects and solve challenging problems. Committed to continuous learning and staying updated
+                        with the latest AI technologies and trends. Looking forward to applying my skills and knowledge
+                        to contribute to innovative AI solutions.</p>
+                </div>
+                <div class="personal-info mt-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p><strong>Degree:</strong> BE in Computer Engineering</p>
                         </div>
-                        <nav class="">
-                            <div>
-                                <a href="index.html#about">About</a>
-                            </div>
-                            <div>
-                                <a href="index.html#experience">Experience</a>
-                            </div>
-                            <div>
-                                <a href="index.html#education">Education</a>
-                            </div>
-                            <div>
-                                <a href="index.html#certificates">Certificates</a>
-                            </div>
-                        </nav>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/haitham-ismaill-590523208/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://github.com/HaithamIsmail"><i class="fab fa-github"></i></a>
+                        <div class="col-sm-6">
+                            <p><strong>Email:</strong> haithamismail.hi@gmail.com</p>
                         </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="/cv/CV_haithamIsmail.pdf" class="btn w-50 border-end">Download CV</a>
-                            <a href="mailto:haithamismail.hi@gmail.com" class="btn w-50 btn-scroll">Contact Me</a>
+                        <div class="col-sm-6">
+                            <p><strong>Phone:</strong> +961 71 060 782</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" id="about" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>A machine learning engineer searching for the next transformer. I am currently working as machine learning and data engineer at boxMind.ai. My daily job consists of integrating generative AI with software solutions and researching new use cases. My work invovles deploying different on-premises services such as LLMs, Embedding models, vector databases. In addition, my work involves building data pipelines to ingest large amounts of data of different types and sources.</p>
-                        
-                        <p>I am also an instructor for AI bootcamp at YouBee.ai. I was tasked with putting the curricullum and writing the material for the bootcamp.</p>
-
-                        <p>Previously, I worked as an embedded software engineer at Eigentec. I worked on building applications embedded applications that utilize high performance microcontrollers, several serial communication protocols (UART, SPI, I2C), Ethernet, DMA. It also involved researching best methods to implement the pipeline and developing Python scripts that can control the software on the board from a master PC.</p>
-
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Haitham Ismail
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Degree:</span> BE in Computer Engineering
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Phone:</span> +961 71060782
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> haithamismail.hi@gmail.com
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Year of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">online</p>
-                                        <h5 class="mb-0">Publication</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- About End -->
-
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" id="skills" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <span class="skill mb-4">
-                                        <p class="btn btn-secondary">Python</p>
-                                </span>
-                                <span class="skill mb-4">
-                                        <p class="btn btn-secondary">C</p>
-                                </span>
-                                <span class="skill mb-4">
-                                    <p class="btn btn-secondary">C++</p>
-                                </span>
-                                <span class="skill mb-4">
-                                        <p class="btn btn-secondary">Deep Learning</p>
-                                </span>
-                                <span class="skill mb-4">
-                                    <p class="btn btn-secondary">TensorFlow</p>
-                                </span>
-                                <span class="skill mb-4">
-                                    <p class="btn btn-secondary">Pytorch</p>
-                                </span>
-                                <span class="skill mb-4">
-                                    <p class="btn btn-secondary">Airflow</p>
-                                </span>
-                                <span class="skill mb-4">
-                                    <p class="btn btn-secondary">Docker</p>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Skills End -->
-
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="experience">
-                        <h1 class="title pb-3 mb-5">Expericence</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Machine Learning and Data Engineer</h5>
-                                <p class="mb-2">boxMind.ai | <small>November 2023 - Present</small></p>
-                                <p>
-                                    <ul>
-                                        <li>Developed an end-to-end automated call center that utilizes generative AI and MS Azure services to answer the customers' questions in a human-like fashion</li>
-                                        <li>Developed a video search system that retreives relevant clips from videos for user queries</li>
-                                        <li>Optimized and refactored existing GenAI solution codebase for better RAG results and ease of development</li>
-                                        <li>Fine-tuned large language models using state-of-the-art techniques including QLora and Deep Speed for fast and efficient training</li>
-                                        <li>Assisted in building a data pipeline that syncs a storage and ingests different types of documents into a vector database</li>
-                                        <li>Deployed different types of models such as LLMs, VLMs, stable diffusion, and embedding models, and integrated them into system</li>
-                                        <li>Technolgies Used: Torch, HuggingFace Transformers, LlamaIndex, LangChain, LangGraph, Docker, Airflow, Flask, Milvus, MS Azure, GoLang, Linux</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Embedded Software Engineer</h5>
-                                <p class="mb-2">Eigentec | <small>March 2022 - September 2023</small></p>
-                                <p>
-                                    <ul>
-                                        <li>Ported projects to Real-Time operating system by dividing the functionalities of the 
-                                            applications into tasks that are scheduled by the task scheduler and studying each functionality's and interrupt's priority</li>
-                                        <li>Developed, in Python, applications that are used by the user to control the embedded software with data logging functionalities, and configurable usinng YAML files</li>
-                                        <li>Designed and edited embedded software in C language to meet the design requirements</li>
-                                        <li>Documented the project to be user-friendly to the targeted customers</li>
-                                        <li>Technologies Used: Python, C, C++, NXP MCUXpresso, NXP FreeMASTER, NXP Microcontrollers, TF Lite micro</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Machine Learning Engineer, Freelancing</h5>
-                                <p class="mb-2">KATALYST  | <small>June 2024 - Present</small></p>
-                                <p>
-                                    <ul>
-                                        <li>Implemented feature to ingest and parse images, videos, pdfs, and text files to the system</li>
-                                        <li>Extracted description from images and videos using state-of-the-art vision LLMs</li>
-                                        <li>Designed and edited embedded software in C language to meet the design requirements</li>
-                                        <li>Implemented a RAG system with a multi-modal database and open clip embeddings</li>
-                                        <li>Technologies used: openCV, LanceDB, CLIP, LangChain, nltk</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">AI Bootcamp Instructor</h5>
-                                <p class="mb-2"> YouBee.ai | <small>January 2024 - Present</small></p>
-                                <p>
-                                    <ul>
-                                        <li>Created comprehensive explainer notebooks designed to be self-sufficient and to provide practical examples</li>
-                                        <li>Recorded standalone sessions to explain each lesson</li>
-                                        <li>Explained the lessons in live sessions to make the bootcamp more engaging</li>
-                                        <li>Technologies used: Jupyter Notebooks, Markdown, Python, Numpy, Tensorflow, Pandas, Sci-kit Learn, Matplotlib </li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Expericence End -->
-
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="education" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                        <h1 class="title pb-3 mb-5">Education</h1>
-                            <div class="position-relative mb-4">
-                                <div class="border-start border-2 border-light pt-2 ps-5">
-                                    <div class="position-relative mb-4">
-                                        <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                        <h5 class="mb-1">Bachelor of Engineering in Computer Engineering</h5>
-                                        <p class="mb-2">Maaref University | <small>Lebanon</small></p>
-                                    </div>
-                                </div>
-                        </div>
-                    </section>
-
-
-                    <!-- Ceritficate Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="certificates" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                        <h1 class="title pb-3 mb-5">Certificates</h1>
-                        <div class="col g-4">
-                            <div class="col-md-12">
-                                <div class="service-item">
-                                    <h5 class="mb-2"><a href="https://coursera.org/verify/specialization/THSMNWK72YRR" target="_blank">Deep
-                                        Learning Specialization</a></h5>
-                                    <p class="mb-0">Deeplearning.ai</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="service-item">
-                                    <h5 class="mb-2"><a href="https://coursera.org/verify/specialization/3MBNNQJVKZZ0" target="_blank">TensorFlow: Advanced
-                                        Techniques</a></h5>
-                                    <p class="mb-0">Deeplearning.ai</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="service-item">
-                                    <h5 class="mb-2"><a href="https://e.huawei.com/en/talent/#/cert/certificate-verification" target="_blank">Huawei Certified ICT Associate in Cloud Computing</a></h5>
-                                    <p class="mb-0">Huawei</p>
-                                    <p class="mb-0" style="font-size:x-small;">ID: 01010080280806277763629</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Ceritficate Start -->
-
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/haitham-ismaill-590523208/"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://github.com/HaithamIsmail"><i class="fab fa-github"></i></a>
-                            </div>
-							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							<p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
-                    </section>
-                    <!-- Footer End -->
+                <a href="cv/Haitham Ismail.pdf" class="modern-btn outline">Download CV</a>
+            </div>
+            <div class="stats-side fade-in">
+                <div class="stat-circle">
+                    <strong>4</strong>
+                    <a href="#experience"><span>Years Exp.</span></a>
+                </div>
+                <div class="stat-circle">
+                    <strong>1</strong>
+                    <a href="#certificates"><span>Publication</span></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <!-- SECTION 3: EXPERIENCE -->
+        <section id="experience" class="screen bg-light">
+            <h2 class="section-title">Experience</h2>
 
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+            <div class="tabs-container">
+                <button class="tab-btn active" onclick="filterExperience('employment')">Employment</button>
+                <button class="tab-btn" onclick="filterExperience('freelance')">Freelance</button>
+            </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+            <div class="timeline-container">
+
+                <!-- EMPLOYMENT ITEMS -->
+                <div class="timeline-item left" data-category="employment">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>intalio</h3>
+                            <span class="year">Aug 2025 - Present</span>
+                        </div>
+                        <h4>AI Engineer</h4>
+                        <ul>
+                            <li>Lead a team of AI engineers to serve different AI systems and POCs</li>
+                            <li>Improved existing document digitalization pipeline quality by >40%</li>
+                            <li>Developed metadata extraction pipeline (NER, Sentiment, Classification)</li>
+                            <li>Designed agentic chatbot using tool calling and RAG</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-category="employment">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>youbee.ai</h3>
+                            <span class="year">Jan 2024 - Present</span>
+                        </div>
+                        <h4>AI Bootcamp Instructor</h4>
+                        <ul>
+                            <li>Created notebooks and recorded sessions for 3 AI courses levels</li>
+                            <li>Conducted live engaging sessions</li>
+                            <li>Created assignments and labs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-category="employment">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>Maids.cc</h3>
+                            <span class="year">Apr 2025 - Sept 2025</span>
+                        </div>
+                        <h4>AI Business Analyst</h4>
+                        <ul>
+                            <li>Decreased chatbot costs by ~30% with prompt optimization & caching</li>
+                            <li>Automated workflows using LangGraph Agents</li>
+                            <li>Developed automated alerting system using OpenSearch</li>
+                            <li>Ported chatbots to N8N with MongoDB integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-category="employment">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>boxMind.ai</h3>
+                            <span class="year">Nov 2023 - Apr 2025</span>
+                        </div>
+                        <h4>Machine Learning Engineer</h4>
+                        <ul>
+                            <li>Built end-to-end automated call center with GenAI & Azure</li>
+                            <li>Developed video search system with semantic search</li>
+                            <li>Optimized GenAI codebase for better RAG results</li>
+                            <li>Fine-tuned LLMs using QLoRA and DeepSpeed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-category="employment">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>Eigentec</h3>
+                            <span class="year">June 2022 - Sept 2023</span>
+                        </div>
+                        <h4>Embedded Software Engineer</h4>
+                        <ul>
+                            <li>Ported projects to RTOS</li>
+                            <li>Designed software for NXP i.MX RT1180-1170</li>
+                            <li>Integrated Freedom boards and built the communication layer for high speed sampling (>20
+                                Ms/s)</li>
+                            <li>Ported ML pipelines with TF Lite Micro</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FREELANCE ITEMS -->
+                <div class="timeline-item left" data-category="freelance">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>Freelance</h3>
+                            <span class="year">May - Dec 2025</span>
+                        </div>
+                        <h4>AI Engineer</h4>
+                        <ul>
+                            <li>Deployed Qwen2.5-VL for doc classification (>95% accuracy)</li>
+                            <li>Extracted barcodes with near-perfect accuracy</li>
+                            <li>Developed smart search system transforming natural language queries to MongoDB queries
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-category="freelance">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>Freelance</h3>
+                            <span class="year">June 2025</span>
+                        </div>
+                        <h4>Automation Engineer</h4>
+                        <ul>
+                            <li>Automated N8N workflows (reminders, CRM sync)</li>
+                            <li>Synced data between Pipedrive, Supabase, and Fireflies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-category="freelance">
+                    <div class="timeline-dot"></div>
+                    <div class="modern-card">
+                        <div class="card-header">
+                            <h3>KATALYST</h3>
+                            <span class="year">June 2024</span>
+                        </div>
+                        <h4>ML Engineer (Freelance)</h4>
+                        <ul>
+                            <li>Ingested and parsed multi-modal files (PDFs, Videos)</li>
+                            <li>Extracted descriptions using VLMs</li>
+                            <li>Implemented RAG with multi-modal DB and CLIP embeddings</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="screen bg-white">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="skill-grid">
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>PyTorch/ TensorFlow</span>
+                        </div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>GenAI</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Machine
+                                Learning</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Deep Learning
+                                Learning</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>MLOps & LLMOps</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Engineering & Data</h3>
+                    <div class="skill-grid">
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Docker</span>
+                        </div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>OpenSearch /
+                                Elasticsearch</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Vector DBs</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Apache
+                                Airflow</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Redis</span></div>
+                    </div>
+
+                </div>
+
+                <div class="skill-category">
+                    <h3>Embedded Systems</h3>
+                    <div class="skill-grid">
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>RTOS</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>TF Lite Micro /
+                                ONNX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-grid">
+                        <div class="skill-card"><i class="fas fa-check-circle"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>C/C++</span></div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Go</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Languages & Soft Skills</h3>
+                    <div class="skill-grid">
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>Arabic
+                                (Native)</span>
+                        </div>
+                        <div class="skill-card"><i class="fas fa-check-circle"></i> <span>English
+                                (Professional)</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: EDUCATION -->
+        <section id="education" class="screen bg-light">
+            <h2 class="section-title">Education</h2>
+            <div class="modern-card full-width">
+                <div class="card-header">
+                    <h3>Bachelor of Engineering in Computer Engineering</h3>
+                    <span class="year">2018 - 2022</span>
+                </div>
+                <h4>Maaref University, Lebanon</h4>
+                <p><strong>GPA: 3.96/4.0</strong></p>
+            </div>
+        </section>
+
+        <!-- SECTION 6: CERTIFICATES -->
+        <section id="certificates" class="screen bg-white">
+            <h2 class="section-title">Certificates</h2>
+            <div class="grid-container">
+                <div class="modern-card compact">
+                    <h5>Deep Learning Specialization</h5>
+                    <p class="text-muted">Deeplearning.ai</p>
+                    <a href="https://coursera.org/verify/specialization/THSMNWK72YRR" target="_blank"
+                        class="modern-btn small">View Certificate</a>
+                </div>
+                <div class="modern-card compact">
+                    <h5>TensorFlow: Advanced Techniques</h5>
+                    <p class="text-muted">Deeplearning.ai</p>
+                    <a href="https://coursera.org/verify/specialization/3MBNNQJVKZZ0" target="_blank"
+                        class="modern-btn small">View Certificate</a>
+                </div>
+                <div class="modern-card compact">
+                    <h5>Huawei Certified ICT Associate</h5>
+                    <p class="text-muted">Cloud Computing</p>
+                    <span class="small d-block mb-2">ID: 01010080280806277763629</span>
+                    <br> <!-- Force new line -->
+                    <a href="https://e.huawei.com/en/talent/#/cert/certificate-verification" target="_blank"
+                        class="modern-btn small">View Certificate</a>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2 class="section-title sm">Publications</h2>
+                <div class="modern-card compact">
+                    <p><a href="https://ieeexplore.ieee.org/document/10225657" target="_blank">Internet-of-Things-Based
+                            Smart-Home Time-Priority-Cost (TPC)-Aware Energy Management System for Energy Cost
+                            Reduction</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: CONTACT -->
+        <section id="contact" class="screen center-content bg-light">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="social-links-large">
+                <a href="mailto:haithamismail.hi@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/haitham-ismaill-590523208/"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a>
+                <a href="https://github.com/HaithamIsmail"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <footer>
+                <p>&copy; 2025</p>
+            </footer>
+        </section>
+
+    </div>
+
+    <script>
+        // Intersection Observer for Nav Highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.side-nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(sec => observer.observe(sec));
+
+        // Experience Tabs Logic
+        function filterExperience(category) {
+            // Update Tab Buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.innerText.toLowerCase() === category || (category === 'employment' && btn.innerText === 'Employment')) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Filter Timeline Items
+            const items = document.querySelectorAll('.timeline-item');
+            items.forEach(item => {
+                if (item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden');
+                    // Reset animation
+                    item.style.animation = 'none';
+                    item.offsetHeight; /* trigger reflow */
+                    item.style.animation = 'fadeInUp 0.6s forwards';
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize with Employment
+        document.addEventListener('DOMContentLoaded', () => {
+            filterExperience('employment');
+        });
+    </script>
+</body>
+
 </html>
