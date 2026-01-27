@@ -20,7 +20,8 @@ Highly skilled Computer Engineer with a strong foundation in software developmen
 - Lead a team of AI engineers to design and develop multiple AI systems and POCs
 - Improved existing document digitalization pipeline quality by more than 40%
 - Developed metadata extraction pipeline for digitalized documents (including NER, Sentiment, Summary, Document classification, Fields extraction, etc...)
-- Designed and developed an agentic chatbot that utilizes tool calling and RAG techqinues to serve different types of requests 
+- Designed and developed an agentic chatbot that utilizes tool calling and RAG techqinues to serve different types of requests
+- Deployed the applications using Kuberenetes in air gapped environments using RKE2 and on differenet cloud providers such as Huawei Cloud, Azure, Google Cloud.
 
 **Machine Learning and Data Engineer**, boxMind.ai, Lebanon | November 2023 - April 2025
 
